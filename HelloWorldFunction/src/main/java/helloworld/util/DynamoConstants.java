@@ -5,11 +5,11 @@ public class DynamoConstants {
 
     public static final String SORT_KEY = "rank";
 
-    public static final String TABLE_NAME = "cainzPoToi";
+    public static final String TABLE_NAME = "cainzPoint";
 
     public static final String REGION = "ap-northeast-1";
 
-    public static final String ACCESS_KEY = "AKIAU5S4KCPJARQN23XM";
+    public static final String ACCESS_KEY = "AKIAXZ7J7TQOMELFUMNQ";
 
-    public static final String ACCESS_SECRET = "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";
+    public static final String ACCESS_SECRET = "wryXBI2DtimuRyukuN2j3p8fjZH9RrvhhsolI+Bw";
 }
