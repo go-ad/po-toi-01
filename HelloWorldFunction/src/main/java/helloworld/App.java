@@ -48,10 +48,6 @@ public class App implements RequestHandler<APIGatewayProxyRequestEvent, APIGatew
         dbMapper = new DynamoDBMapper(amazonDynamoDBClient);
         table = new DynamoDB(amazonDynamoDBClient).getTable(DynamoConstants.TABLE_NAME);
 
-//        String so = lines[5].trim();
-//        int sa = Integer.parseInt(lines[11].trim());
-//        String dt = lines[17].trim();
-
         String so = "";
         int sa = 0;
         String dt = "";
