@@ -5,7 +5,7 @@ public class DynamoConstants {
 
     public static final String SORT_KEY = "rank";
 
-    public static final String TABLE_NAME = "cainzPoint";
+    public static final String TABLE_NAME = "cainzPoToi";
 
     public static final String REGION = "ap-northeast-1";
 
