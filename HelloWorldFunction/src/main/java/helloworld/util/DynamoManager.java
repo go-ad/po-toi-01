@@ -3,6 +3,7 @@ package helloworld.util;
 import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 import com.amazonaws.services.dynamodbv2.document.DynamoDB;
@@ -15,8 +16,8 @@ public class DynamoManager {
                     new BasicAWSCredentials(DynamoConstants.ACCESS_KEY, DynamoConstants.ACCESS_SECRET));
 
     private static final AmazonDynamoDB dynamoDB =
-            AmazonDynamoDBClientBuilder.standard().withCredentials(credentialsProvider).withRegion(DynamoConstants.REGION)
-                    .build();
+            AmazonDynamoDBClientBuilder.standard().withCredentials(new DefaultAWSCredentialsProviderChain())
+            .build();
 
     private static final DynamoDB dynamo = new DynamoDB(dynamoDB);
 
